@@ -124,8 +124,14 @@ print("b part =",setb)
 integer={1,2,3,4,5,6,7,8,9,10}
 setd=integer.symmetric_difference(set1)
 print("d part =",setd)
-sete=integer.symmetric_difference(setb)
-print("e part =",sete)
+setx=set1.union(set2)
+setz=setx.union(set3)
+sete=setz.symmetric_difference(integer)
+setE=set()
+for i in sete:
+    if i<=10:
+        setE.add(i)
+print("e part =",setE)
 
 
 
