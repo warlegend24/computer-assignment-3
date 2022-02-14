@@ -11,13 +11,13 @@ month=int(input("ENTER MONTH"))
 year=int(input("ENTER YEAR"))
 if (day<1 or day>31)&(month<1 or month>12)&(year<1800 or year>2025):
     print("INVALID DATE OR YEAR OR MONTH")
-elif day==31 & month==12 :
+elif day==31 and month==12 :
     print("NEXT DATE = 1/1/",year+1)
-elif day==31 & month in [1,3,5,7,8,10] :
+elif day==31 and month in [1,3,5,7,8,10] :
     print("NEXT DATE = 1/",month+1,'/',year)
-elif day==30 & month not in [1,3,5,7,8,10]:
+elif day==30 and month not in [1,3,5,7,8,10]:
     print("NEXT DATE = 1/",month+1,"/",year)
-elif day==28 & month==2:
+elif day==28 and month==2:
     if year%100==0 & year&400==0:
         print("NEXT DATE = 29/2/",year)
     elif year%4==0:
